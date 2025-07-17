@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24.4.1
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install
