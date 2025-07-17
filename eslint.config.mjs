@@ -3,7 +3,6 @@ import antfu from "@antfu/eslint-config";
 // Run this command to generate base config and vs code settings:
 // pnpm dlx @antfu/eslint-config@latest
 // @ts-check
-import withNuxt from "./.nuxt/eslint.config.mjs"
 
 export default antfu({
   type: "app",
