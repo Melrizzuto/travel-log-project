@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "ci:lint": "act pull_request --container-architecture linux/amd64"
   },
   "dependencies": {
     "@nuxt/eslint": "1.5.2",
